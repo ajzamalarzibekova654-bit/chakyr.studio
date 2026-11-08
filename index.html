@@ -4,135 +4,422 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHAKYR.STUDIO | Электрондук чакыруу</title>
+<meta name="theme-color" content="#eee9df">
+<title>CHAKYR.STUDIO | Санарип чакыруулар</title>
+
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 body{
- margin:0;
- font-family:Georgia,serif;
- background:#faf7f1;
- color:#45372f;
+font-family:Arial,sans-serif;
+background:#eee9df;
+color:#40372e;
 }
 header{
- padding:24px 18px;
- text-align:center;
- background:#fffdf9;
- border-bottom:1px solid #e8ddce;
+text-align:center;
+padding:35px 15px 20px;
 }
 .logo{
- font-size:29px;
- letter-spacing:4px;
- color:#9b7650;
- font-weight:bold;
+font-family:Georgia,serif;
+font-size:42px;
+color:#8b7041;
+letter-spacing:3px;
 }
-header p{font-size:12px;letter-spacing:2px}
-.hero{
- padding:65px 22px;
- text-align:center;
- background:linear-gradient(145deg,#f0e5d6,#fffaf2);
+.tagline{
+letter-spacing:5px;
+font-size:10px;
+margin-top:8px;
+color:#887d6d;
 }
-.hero small{letter-spacing:3px;color:#a17b53}
-h1{
- font-size:38px;
- line-height:1.3;
- font-weight:normal;
- margin:20px 0;
+.intro{
+text-align:center;
+padding:35px 20px;
 }
-.hero p{line-height:1.8;color:#78675a}
+.intro h1{
+font-family:Georgia,serif;
+font-size:30px;
+font-weight:normal;
+line-height:1.4;
+}
+.intro p{
+color:#81766b;
+line-height:1.8;
+margin:15px 0;
+}
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+margin-top:22px;
+}
 .btn{
- display:inline-block;
- background:#98734f;
- color:white;
- padding:15px 27px;
- border-radius:30px;
- text-decoration:none;
- margin-top:20px;
+padding:15px 23px;
+border-radius:35px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+border:none;
+cursor:pointer;
 }
-section{padding:42px 18px;text-align:center}
-h2{font-size:27px;font-weight:normal}
-.subtitle{color:#8b7c70;line-height:1.7}
-.cards{
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:13px;
- margin-top:25px;
+.dark{background:#211d19;color:white}
+.light{background:white;color:#29231e}
+.categories{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:20px 12px;
 }
-.card{
- background:white;
- padding:25px 10px;
- border:1px solid #e8ddce;
- border-radius:15px;
+.cat{
+padding:12px 18px;
+border:1px solid #d8d1c6;
+border-radius:30px;
+background:#faf9f6;
+color:#756b60;
+cursor:pointer;
 }
-.card span{font-size:35px}
-.card h3{font-size:16px;font-weight:normal}
-.card p{font-size:12px;color:#928274}
+.cat.active{
+background:#211d19;
+color:white;
+}
+.search{
+display:block;
+width:90%;
+max-width:600px;
+margin:15px auto;
+padding:17px 22px;
+border:1px solid #d8d1c6;
+border-radius:35px;
+font-size:15px;
+background:#faf9f6;
+outline:none;
+}
+.count{
+text-align:center;
+letter-spacing:5px;
+font-size:12px;
+color:#82786d;
+padding:20px;
+}
+.designs{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+padding:15px;
+max-width:950px;
+margin:auto;
+}
+.design{
+background:white;
+border-radius:15px;
+overflow:hidden;
+text-align:center;
+padding-bottom:17px;
+box-shadow:0 3px 12px #00000008;
+}
+.preview{
+height:220px;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding:15px;
+position:relative;
+}
+.preview h2{
+font-family:Georgia,serif;
+font-size:24px;
+font-weight:normal;
+line-height:1.5;
+}
+.preview p{
+font-size:11px;
+letter-spacing:3px;
+margin-top:10px;
+}
+.gold{background:#eee5d6;color:#80643c}
+.rose{background:#f1dfe0;color:#885e65}
+.white{background:#f8f7f2;color:#766b59}
+.green{background:#dce5d8;color:#53664f}
+.blue{background:#dce5eb;color:#536b7a}
+.lilac{background:#e7dfee;color:#78628c}
+.preview .number{
+position:absolute;
+bottom:12px;
+font-size:10px;
+letter-spacing:3px;
+}
+.design h3{
+font-size:15px;
+margin:13px 5px;
+}
+.order{
+display:inline-block;
+background:#8b7041;
+color:white;
+padding:11px 20px;
+border-radius:25px;
+text-decoration:none;
+font-size:13px;
+}
 .about{
- background:#eee4d7;
- padding:42px 23px;
- text-align:center;
- line-height:1.9;
+text-align:center;
+padding:50px 25px;
+background:#e5dfd3;
+line-height:2;
+}
+.about h2{
+font-family:Georgia,serif;
+font-weight:normal;
+font-size:25px;
+margin-bottom:15px;
 }
 footer{
- text-align:center;
- padding:28px;
- background:#45372f;
- color:white;
- font-size:12px;
- letter-spacing:2px;
+background:#40372e;
+color:white;
+text-align:center;
+padding:30px 15px;
+font-size:12px;
+letter-spacing:2px;
+line-height:2;
+}
+@media(min-width:650px){
+.designs{grid-template-columns:repeat(3,1fr)}
+.preview{height:290px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
- <div class="logo">CHAKYR</div>
- <p>ЭЛЕКТРОНДУК ЧАКЫРУУЛАР</p>
+<div class="logo">CHAKYR</div>
+<div class="tagline">DIGITAL INVITATIONS</div>
 </header>
 
-<div class="hero">
- <small>ӨЗГӨЧӨ КҮНҮҢҮЗГӨ</small>
- <h1>Ар бир майрамга<br>өзгөчө чакыруу</h1>
- <p>Жакындарыңызды кооз, заманбап<br>электрондук чакыруу менен кубантыңыз.</p>
- <a href="#design" class="btn">Дизайндарды көрүү</a>
+<section class="intro">
+<h1>Ар бир майрамга<br>өзгөчө чакыруу</h1>
+<p>
+Жакындарыңызды кооз, заманбап жана<br>
+өзгөчө санарип чакыруу менен кубантыңыз.
+</p>
+<div class="buttons">
+<a href="#designs" class="btn dark">Дизайн тандоо</a>
+<a href="https://wa.me/996507505947"
+class="btn light">WhatsApp байланыш</a>
 </div>
-
-<section id="design">
- <h2>Чакыруу түрлөрү</h2>
- <p class="subtitle">Сиздин майрамыңызга ылайыктуу<br>өзгөчө дизайндар</p>
-
- <div class="cards">
-  <div class="card">
-   <span>💍</span>
-   <h3>Үйлөнүү үлпөтү</h3>
-   <p>Сүйүү баяныңызга өзгөчө чакыруу</p>
-  </div>
-  <div class="card">
-   <span>🌸</span>
-   <h3>Кыз узатуу</h3>
-   <p>Улуттук жана назик дизайн</p>
-  </div>
-  <div class="card">
-   <span>👶</span>
-   <h3>Бешик той</h3>
-   <p>Бөбөгүңүздүн кубанычтуу күнү</p>
-  </div>
-  <div class="card">
-   <span>🎂</span>
-   <h3>Туулган күн</h3>
-   <p>Эсте каларлык чакыруу</p>
-  </div>
- </div>
 </section>
 
-<div class="about">
- <h2>Сиздин майрамыңыз — биздин өзгөчөлүгүбүз</h2>
- <p>Кооз дизайн, жагымдуу музыка жана өзгөчө анимация. Баары бир шилтемеде!</p>
+<section class="categories" id="categories">
+<button class="cat active" data-cat="all">Баары</button>
+<button class="cat" data-cat="Үйлөнүү үлпөтү">Үйлөнүү үлпөтү</button>
+<button class="cat" data-cat="Кыз узатуу">Кыз узатуу</button>
+<button class="cat" data-cat="Тушоо той">Тушоо той</button>
+<button class="cat" data-cat="Бешик той">Бешик той</button>
+<button class="cat" data-cat="Сүннөт той">Сүннөт той</button>
+<button class="cat" data-cat="Туулган күн">Туулган күн</button>
+<button class="cat" data-cat="Юбилей">Юбилей</button>
+<button class="cat" data-cat="Эшик төр">Эшик төр</button>
+</section>
+
+<input class="search" id="search"
+placeholder="Дизайнды аты боюнча издөө...">
+
+<div class="count" id="count">12 ДИЗАЙН</div>
+
+<section class="designs" id="designs">
+
+<div class="design" data-cat="Үйлөнүү үлпөтү" data-name="Royal Wedding">
+<div class="preview gold">
+<h2>Wedding<br>Invitation</h2>
+<p>БАКЫТТУУ КҮН</p>
+<span class="number">01</span>
+</div>
+<h3>Royal Wedding</h3>
+<a class="order" href="#" data-design="Royal Wedding">Заказ берүү</a>
 </div>
 
+<div class="design" data-cat="Үйлөнүү үлпөтү" data-name="Love Story">
+<div class="preview rose">
+<h2>Love<br>Story</h2>
+<p>БИЗДИН ҮЙ-БҮЛӨ</p>
+<span class="number">02</span>
+</div>
+<h3>Love Story</h3>
+<a class="order" href="#" data-design="Love Story">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Кыз узатуу" data-name="Princess">
+<div class="preview lilac">
+<h2>Кыз<br>узатуу</h2>
+<p>АК ЖОЛ, КЫЗЫМ</p>
+<span class="number">03</span>
+</div>
+<h3>Princess</h3>
+<a class="order" href="#" data-design="Princess">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Кыз узатуу" data-name="Elegant">
+<div class="preview white">
+<h2>Elegant<br>Invitation</h2>
+<p>КЫЗ УЗАТУУ</p>
+<span class="number">04</span>
+</div>
+<h3>Elegant</h3>
+<a class="order" href="#" data-design="Elegant">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Тушоо той" data-name="Little Steps">
+<div class="preview green">
+<h2>Тушоо<br>той</h2>
+<p>АЛГАЧКЫ КАДАМ</p>
+<span class="number">05</span>
+</div>
+<h3>Little Steps</h3>
+<a class="order" href="#" data-design="Little Steps">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Бешик той" data-name="Baby Love">
+<div class="preview rose">
+<h2>Baby<br>Love</h2>
+<p>БЕШИК ТОЙ</p>
+<span class="number">06</span>
+</div>
+<h3>Baby Love</h3>
+<a class="order" href="#" data-design="Baby Love">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Сүннөт той" data-name="Little Hero">
+<div class="preview blue">
+<h2>Little<br>Hero</h2>
+<p>СҮННӨТ ТОЙ</p>
+<span class="number">07</span>
+</div>
+<h3>Little Hero</h3>
+<a class="order" href="#" data-design="Little Hero">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Туулган күн" data-name="Birthday">
+<div class="preview gold">
+<h2>Happy<br>Birthday</h2>
+<p>ТУУЛГАН КҮН</p>
+<span class="number">08</span>
+</div>
+<h3>Birthday</h3>
+<a class="order" href="#" data-design="Birthday">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Юбилей" data-name="Golden Age">
+<div class="preview gold">
+<h2>Golden<br>Age</h2>
+<p>ЮБИЛЕЙ</p>
+<span class="number">09</span>
+</div>
+<h3>Golden Age</h3>
+<a class="order" href="#" data-design="Golden Age">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Эшик төр" data-name="Welcome">
+<div class="preview green">
+<h2>Welcome<br>Home</h2>
+<p>ЭШИК ТӨР</p>
+<span class="number">10</span>
+</div>
+<h3>Welcome</h3>
+<a class="order" href="#" data-design="Welcome">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Үйлөнүү үлпөтү" data-name="Minimal">
+<div class="preview white">
+<h2>Minimal<br>Wedding</h2>
+<p>LOVE FOREVER</p>
+<span class="number">11</span>
+</div>
+<h3>Minimal</h3>
+<a class="order" href="#" data-design="Minimal">Заказ берүү</a>
+</div>
+
+<div class="design" data-cat="Кыз узатуу" data-name="National">
+<div class="preview rose">
+<h2>Улуттук<br>стиль</h2>
+<p>КЫЗ УЗАТУУ</p>
+<span class="number">12</span>
+</div>
+<h3>National</h3>
+<a class="order" href="#" data-design="National">Заказ берүү</a>
+</div>
+
+</section>
+
+<section class="about">
+<h2>CHAKYR.STUDIO</h2>
+<p>
+Ар бир өзгөчө күн — өзгөчө мамилеге татыктуу.<br>
+Сиз үчүн кооз, заманбап санарип чакырууларды даярдайбыз.
+</p>
+<p>Музыка, сүрөт жана жеке маалыматтарыңыз менен.</p>
+<div class="buttons">
+<a href="https://wa.me/996507505947"
+class="btn dark">Биз менен байланыш</a>
+</div>
+</section>
+
 <footer>
- CHAKYR.STUDIO
- <p>АР БИР ЧАКЫРУУ — ӨЗГӨЧӨ БАЯН</p>
+CHAKYR.STUDIO<br>
+АР БИР ЧАКЫРУУ — ӨЗГӨЧӨ БАЯН<br>
+© 2026
 </footer>
+
+<script>
+const categories = document.querySelectorAll(".cat");
+const designs = document.querySelectorAll(".design");
+const search = document.getElementById("search");
+const count = document.getElementById("count");
+
+let selected = "all";
+
+function filterDesigns(){
+let visible = 0;
+designs.forEach(card=>{
+const category = card.dataset.cat;
+const name = card.dataset.name.toLowerCase();
+const text = search.value.toLowerCase();
+const show = (selected==="all" || category===selected)
+&& name.includes(text);
+card.style.display = show ? "block" : "none";
+if(show) visible++;
+});
+count.textContent = visible + " ДИЗАЙН";
+}
+
+categories.forEach(button=>{
+button.addEventListener("click",()=>{
+categories.forEach(b=>b.classList.remove("active"));
+button.classList.add("active");
+selected = button.dataset.cat;
+filterDesigns();
+});
+});
+
+search.addEventListener("input",filterDesigns);
+
+document.querySelectorAll(".order").forEach(button=>{
+button.addEventListener("click",event=>{
+event.preventDefault();
+const design = button.dataset.design;
+const message =
+"Саламатсызбы! CHAKYR.STUDIO аркылуу заказ бергим келет.%0A"+
+"Тандаган дизайн: "+encodeURIComponent(design)+
+"%0AАты-жөнүм: "+
+"%0AМайрамдын түрү: "+
+"%0AКүнү: "+
+"%0AДареги: "+
+"%0AКошумча маалымат: ";
+window.open("https://wa.me/996507505947?text="+message,"_blank");
+});
+});
+</script>
 
 </body>
 </html>
