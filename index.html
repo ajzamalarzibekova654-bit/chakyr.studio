@@ -4,422 +4,201 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#eee9df">
-<title>CHAKYR.STUDIO | Санарип чакыруулар</title>
-
+<meta name="theme-color" content="#eee8dc">
+<title>CHAKYR.STUDIO — Санарип чакыруулар</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{
-font-family:Arial,sans-serif;
-background:#eee9df;
-color:#40372e;
-}
-header{
-text-align:center;
-padding:35px 15px 20px;
-}
-.logo{
-font-family:Georgia,serif;
-font-size:42px;
-color:#8b7041;
-letter-spacing:3px;
-}
-.tagline{
-letter-spacing:5px;
-font-size:10px;
-margin-top:8px;
-color:#887d6d;
-}
-.intro{
-text-align:center;
-padding:35px 20px;
-}
-.intro h1{
-font-family:Georgia,serif;
-font-size:30px;
-font-weight:normal;
-line-height:1.4;
-}
-.intro p{
-color:#81766b;
-line-height:1.8;
-margin:15px 0;
-}
-.buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
-margin-top:22px;
-}
-.btn{
-padding:15px 23px;
-border-radius:35px;
-text-decoration:none;
-font-weight:bold;
-font-size:14px;
-border:none;
-cursor:pointer;
-}
-.dark{background:#211d19;color:white}
-.light{background:white;color:#29231e}
-.categories{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-padding:20px 12px;
-}
-.cat{
-padding:12px 18px;
-border:1px solid #d8d1c6;
-border-radius:30px;
-background:#faf9f6;
-color:#756b60;
-cursor:pointer;
-}
-.cat.active{
-background:#211d19;
-color:white;
-}
-.search{
-display:block;
-width:90%;
-max-width:600px;
-margin:15px auto;
-padding:17px 22px;
-border:1px solid #d8d1c6;
-border-radius:35px;
-font-size:15px;
-background:#faf9f6;
-outline:none;
-}
-.count{
-text-align:center;
-letter-spacing:5px;
-font-size:12px;
-color:#82786d;
-padding:20px;
-}
-.designs{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:14px;
-padding:15px;
-max-width:950px;
-margin:auto;
-}
-.design{
-background:white;
-border-radius:15px;
-overflow:hidden;
-text-align:center;
-padding-bottom:17px;
-box-shadow:0 3px 12px #00000008;
-}
-.preview{
-height:220px;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-text-align:center;
-padding:15px;
-position:relative;
-}
-.preview h2{
-font-family:Georgia,serif;
-font-size:24px;
-font-weight:normal;
-line-height:1.5;
-}
-.preview p{
-font-size:11px;
-letter-spacing:3px;
-margin-top:10px;
-}
-.gold{background:#eee5d6;color:#80643c}
-.rose{background:#f1dfe0;color:#885e65}
-.white{background:#f8f7f2;color:#766b59}
-.green{background:#dce5d8;color:#53664f}
-.blue{background:#dce5eb;color:#536b7a}
-.lilac{background:#e7dfee;color:#78628c}
-.preview .number{
-position:absolute;
-bottom:12px;
-font-size:10px;
-letter-spacing:3px;
-}
-.design h3{
-font-size:15px;
-margin:13px 5px;
-}
-.order{
-display:inline-block;
-background:#8b7041;
-color:white;
-padding:11px 20px;
-border-radius:25px;
-text-decoration:none;
-font-size:13px;
-}
-.about{
-text-align:center;
-padding:50px 25px;
-background:#e5dfd3;
-line-height:2;
-}
-.about h2{
-font-family:Georgia,serif;
-font-weight:normal;
-font-size:25px;
-margin-bottom:15px;
-}
-footer{
-background:#40372e;
-color:white;
-text-align:center;
-padding:30px 15px;
-font-size:12px;
-letter-spacing:2px;
-line-height:2;
-}
-@media(min-width:650px){
-.designs{grid-template-columns:repeat(3,1fr)}
-.preview{height:290px}
-}
+html{scroll-behavior:smooth}
+body{background:#f5f1e9;color:#302820;font-family:Montserrat,sans-serif}
+header{padding:25px 20px;text-align:center;border-bottom:1px solid #ded5c6}
+.logo{font-family:'Cormorant Garamond',serif;font-size:45px;letter-spacing:8px;color:#a58a58;font-weight:700}
+.sublogo{font-size:10px;letter-spacing:7px;color:#827766;margin-top:5px}
+.hero{min-height:650px;padding:95px 22px 65px;text-align:center;background:radial-gradient(circle at 10% 30%,#e9dfce,transparent 35%),radial-gradient(circle at 90% 80%,#e6dccb,transparent 35%)}
+.tag{font-size:11px;letter-spacing:5px;color:#a58a58;margin-bottom:35px}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(45px,12vw,75px);line-height:1.05;font-weight:500;max-width:650px;margin:auto}
+.hero p{font-size:14px;line-height:2;color:#82796e;margin:30px auto;max-width:440px}
+.btn{display:inline-block;padding:19px 30px;border-radius:50px;text-decoration:none;font-size:13px;font-weight:600;margin:7px;background:#29231e;color:white;border:1px solid #29231e}
+.btn.light{background:#fff;color:#29231e;border-color:#ddd4c7}
+.section{padding:75px 20px;text-align:center}
+.section h2{font-family:'Cormorant Garamond',serif;font-size:43px;font-weight:500;margin-bottom:15px}
+.desc{color:#897e71;font-size:13px;line-height:2;margin:0 auto 35px;max-width:450px}
+.divider{color:#b59b68;font-size:25px;margin:25px}
+.samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:850px;margin:auto}
+.sample{background:#fff;padding:35px 18px;border:1px solid #e4dacb;border-radius:4px;box-shadow:0 8px 25px #00000008}
+.sample .symbol{font-size:35px;color:#b49a65;margin-bottom:15px}
+.sample h3{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500}
+.sample p{font-size:12px;color:#958a7c;line-height:1.8;margin-top:12px}
+.steps{max-width:650px;margin:auto;text-align:left}
+.step{padding:20px;border-bottom:1px solid #ded5c6;display:flex;gap:20px;align-items:center}
+.num{font-family:'Cormorant Garamond',serif;font-size:35px;color:#b39a69}
+.step p{font-size:13px;line-height:1.8;color:#82796e}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;max-width:650px;margin:auto}
+.price{padding:35px 20px;background:#fff;border:1px solid #ded4c4;border-radius:8px}
+.price.featured{background:#827260;color:white}
+.price h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500}
+.amount{font-size:29px;font-weight:600;margin:20px 0}
+.price p{font-size:12px;line-height:2;color:inherit;opacity:.8}
+.price .btn{margin-top:20px}
+form{max-width:520px;margin:auto;text-align:left;background:white;padding:28px;border-radius:12px}
+label{font-size:12px;display:block;margin:17px 0 8px;color:#766b5e}
+input,select,textarea{width:100%;padding:15px;border:1px solid #ded5c7;border-radius:7px;background:#fcfaf6;font-family:Montserrat;font-size:13px;outline:none}
+textarea{min-height:80px}
+form button{width:100%;cursor:pointer;margin-top:25px}
+footer{padding:40px 20px;text-align:center;background:#302820;color:#e9dfce}
+footer .logo{font-size:32px}
+footer p{font-size:11px;margin-top:15px;line-height:2;color:#c6b9a5}
+.whatsapp{position:fixed;right:20px;bottom:22px;background:#25c76a;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:27px;box-shadow:0 5px 20px #0002;z-index:10}
 </style>
 </head>
-
 <body>
 
 <header>
 <div class="logo">CHAKYR</div>
-<div class="tagline">DIGITAL INVITATIONS</div>
+<div class="sublogo">DIGITAL INVITATIONS</div>
 </header>
 
-<section class="intro">
-<h1>Ар бир майрамга<br>өзгөчө чакыруу</h1>
-<p>
-Жакындарыңызды кооз, заманбап жана<br>
-өзгөчө санарип чакыруу менен кубантыңыз.
-</p>
-<div class="buttons">
-<a href="#designs" class="btn dark">Дизайн тандоо</a>
-<a href="https://wa.me/996507505947"
-class="btn light">WhatsApp байланыш</a>
+<section class="hero">
+<div class="tag">ӨЗГӨЧӨ КҮН · ӨЗГӨЧӨ АДАМДАР</div>
+<h1>Ар бир майрамга өзгөчө чакыруу</h1>
+<p>Жакындарыңызды корей стилиндеги кооз, назик жана заманбап санарип чакыруу менен кубантыңыз.</p>
+<a href="#design" class="btn">Дизайн тандоо</a>
+<a href="#order" class="btn light">Заказ берүү</a>
+<div class="divider">✧ ❀ ✧</div>
+</section>
+
+<section class="section" id="design">
+<h2>Биздин чакыруулар</h2>
+<p class="desc">Ар бир өзгөчө күнүңүзгө жарашкан назик дизайндар</p>
+<div class="samples">
+<div class="sample">
+<div class="symbol">♡</div>
+<h3>Elegant Wedding</h3>
+<p>Ак жана алтын түстөгү романтикалык үйлөнүү тоюна чакыруу.</p>
+</div>
+<div class="sample">
+<div class="symbol">✿</div>
+<h3>Pink Blossom</h3>
+<p>Кыз узатуу жана өзгөчө майрамдар үчүн назик дизайн.</p>
+</div>
+<div class="sample">
+<div class="symbol">✧</div>
+<h3>Royal Gold</h3>
+<p>Люкс стилиндеги өзгөчө жана жарашыктуу чакыруу.</p>
+</div>
 </div>
 </section>
 
-<section class="categories" id="categories">
-<button class="cat active" data-cat="all">Баары</button>
-<button class="cat" data-cat="Үйлөнүү үлпөтү">Үйлөнүү үлпөтү</button>
-<button class="cat" data-cat="Кыз узатуу">Кыз узатуу</button>
-<button class="cat" data-cat="Тушоо той">Тушоо той</button>
-<button class="cat" data-cat="Бешик той">Бешик той</button>
-<button class="cat" data-cat="Сүннөт той">Сүннөт той</button>
-<button class="cat" data-cat="Туулган күн">Туулган күн</button>
-<button class="cat" data-cat="Юбилей">Юбилей</button>
-<button class="cat" data-cat="Эшик төр">Эшик төр</button>
+<section class="section">
+<h2>Кантип иштейбиз?</h2>
+<p class="desc">Заказ берүү абдан оңой</p>
+<div class="steps">
+<div class="step"><span class="num">01</span><p><b>Дизайн тандаңыз</b><br>Өзүңүзгө жаккан чакыруу үлгүсүн тандаңыз.</p></div>
+<div class="step"><span class="num">02</span><p><b>Маалымат жөнөтүңүз</b><br>Аты-жөнү, дата, убакыт жана даректи жазыңыз.</p></div>
+<div class="step"><span class="num">03</span><p><b>Төлөм жүргүзүңүз</b><br>Төлөм ырасталгандан кийин чакыруу даярдалат.</p></div>
+<div class="step"><span class="num">04</span><p><b>Даяр шилтемени алыңыз</b><br>Конокторуңузга WhatsApp аркылуу жөнөтүңүз.</p></div>
+</div>
 </section>
 
-<input class="search" id="search"
-placeholder="Дизайнды аты боюнча издөө...">
-
-<div class="count" id="count">12 ДИЗАЙН</div>
-
-<section class="designs" id="designs">
-
-<div class="design" data-cat="Үйлөнүү үлпөтү" data-name="Royal Wedding">
-<div class="preview gold">
-<h2>Wedding<br>Invitation</h2>
-<p>БАКЫТТУУ КҮН</p>
-<span class="number">01</span>
+<section class="section" id="prices">
+<h2>Биздин баалар</h2>
+<p class="desc">Сизге ылайыктуу кызматты тандаңыз</p>
+<div class="prices">
+<div class="price">
+<h3>Стандарт</h3>
+<div class="amount">1 490 сом</div>
+<p>Даяр дизайн<br>Маалыматтарды жайгаштыруу<br>Интерактивдүү чакыруу<br>Конокторго жөнөтүү үчүн шилтеме</p>
+<a href="#order" class="btn">Заказ берүү</a>
 </div>
-<h3>Royal Wedding</h3>
-<a class="order" href="#" data-design="Royal Wedding">Заказ берүү</a>
+<div class="price featured">
+<h3>Жеке дизайн</h3>
+<div class="amount">2 490 сом</div>
+<p>Сиз үчүн өзгөчө дизайн<br>Жеке түс жана стил<br>Сүрөттөрдү жайгаштыруу<br>Анимация жана интерактив<br>Жеке каалоого ылайыкташтыруу</p>
+<a href="#order" class="btn light">Заказ берүү</a>
 </div>
-
-<div class="design" data-cat="Үйлөнүү үлпөтү" data-name="Love Story">
-<div class="preview rose">
-<h2>Love<br>Story</h2>
-<p>БИЗДИН ҮЙ-БҮЛӨ</p>
-<span class="number">02</span>
 </div>
-<h3>Love Story</h3>
-<a class="order" href="#" data-design="Love Story">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Кыз узатуу" data-name="Princess">
-<div class="preview lilac">
-<h2>Кыз<br>узатуу</h2>
-<p>АК ЖОЛ, КЫЗЫМ</p>
-<span class="number">03</span>
-</div>
-<h3>Princess</h3>
-<a class="order" href="#" data-design="Princess">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Кыз узатуу" data-name="Elegant">
-<div class="preview white">
-<h2>Elegant<br>Invitation</h2>
-<p>КЫЗ УЗАТУУ</p>
-<span class="number">04</span>
-</div>
-<h3>Elegant</h3>
-<a class="order" href="#" data-design="Elegant">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Тушоо той" data-name="Little Steps">
-<div class="preview green">
-<h2>Тушоо<br>той</h2>
-<p>АЛГАЧКЫ КАДАМ</p>
-<span class="number">05</span>
-</div>
-<h3>Little Steps</h3>
-<a class="order" href="#" data-design="Little Steps">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Бешик той" data-name="Baby Love">
-<div class="preview rose">
-<h2>Baby<br>Love</h2>
-<p>БЕШИК ТОЙ</p>
-<span class="number">06</span>
-</div>
-<h3>Baby Love</h3>
-<a class="order" href="#" data-design="Baby Love">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Сүннөт той" data-name="Little Hero">
-<div class="preview blue">
-<h2>Little<br>Hero</h2>
-<p>СҮННӨТ ТОЙ</p>
-<span class="number">07</span>
-</div>
-<h3>Little Hero</h3>
-<a class="order" href="#" data-design="Little Hero">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Туулган күн" data-name="Birthday">
-<div class="preview gold">
-<h2>Happy<br>Birthday</h2>
-<p>ТУУЛГАН КҮН</p>
-<span class="number">08</span>
-</div>
-<h3>Birthday</h3>
-<a class="order" href="#" data-design="Birthday">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Юбилей" data-name="Golden Age">
-<div class="preview gold">
-<h2>Golden<br>Age</h2>
-<p>ЮБИЛЕЙ</p>
-<span class="number">09</span>
-</div>
-<h3>Golden Age</h3>
-<a class="order" href="#" data-design="Golden Age">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Эшик төр" data-name="Welcome">
-<div class="preview green">
-<h2>Welcome<br>Home</h2>
-<p>ЭШИК ТӨР</p>
-<span class="number">10</span>
-</div>
-<h3>Welcome</h3>
-<a class="order" href="#" data-design="Welcome">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Үйлөнүү үлпөтү" data-name="Minimal">
-<div class="preview white">
-<h2>Minimal<br>Wedding</h2>
-<p>LOVE FOREVER</p>
-<span class="number">11</span>
-</div>
-<h3>Minimal</h3>
-<a class="order" href="#" data-design="Minimal">Заказ берүү</a>
-</div>
-
-<div class="design" data-cat="Кыз узатуу" data-name="National">
-<div class="preview rose">
-<h2>Улуттук<br>стиль</h2>
-<p>КЫЗ УЗАТУУ</p>
-<span class="number">12</span>
-</div>
-<h3>National</h3>
-<a class="order" href="#" data-design="National">Заказ берүү</a>
-</div>
-
 </section>
 
-<section class="about">
-<h2>CHAKYR.STUDIO</h2>
-<p>
-Ар бир өзгөчө күн — өзгөчө мамилеге татыктуу.<br>
-Сиз үчүн кооз, заманбап санарип чакырууларды даярдайбыз.
-</p>
-<p>Музыка, сүрөт жана жеке маалыматтарыңыз менен.</p>
-<div class="buttons">
-<a href="https://wa.me/996507505947"
-class="btn dark">Биз менен байланыш</a>
-</div>
+<section class="section" id="order">
+<h2>Заказ берүү</h2>
+<p class="desc">Маалыматтарды толтуруңуз. Заказыңыз WhatsApp аркылуу жөнөтүлөт.</p>
+<form id="orderForm">
+<label>Аты-жөнүңүз</label>
+<input id="customer" placeholder="Атыңызды жазыңыз" required>
+
+<label>Майрамдын түрү</label>
+<select id="event">
+<option>Үйлөнүү үлпөтү</option>
+<option>Кыз узатуу</option>
+<option>Тушоо той</option>
+<option>Бешик той</option>
+<option>Сүннөт той</option>
+<option>Туулган күн</option>
+<option>Юбилей</option>
+</select>
+
+<label>Кызмат түрү</label>
+<select id="service">
+<option>Стандарт — 1490 сом</option>
+<option>Жеке дизайн — 2490 сом</option>
+</select>
+
+<label>Майрам ээлеринин аты-жөнү</label>
+<input id="names" placeholder="Мисалы: Азамат жана Айдана" required>
+
+<label>Майрамдын датасы</label>
+<input id="date" type="date" required>
+
+<label>Башталыш убактысы</label>
+<input id="time" type="time">
+
+<label>Ресторан же дарек</label>
+<input id="place" placeholder="Ресторандын аталышы жана дареги">
+
+<label>Кошумча маалымат</label>
+<textarea id="extra" placeholder="Каалоолоруңузду жазыңыз"></textarea>
+
+<button class="btn" type="submit">WhatsApp аркылуу заказ берүү</button>
+</form>
 </section>
 
 <footer>
-CHAKYR.STUDIO<br>
-АР БИР ЧАКЫРУУ — ӨЗГӨЧӨ БАЯН<br>
-© 2026
+<div class="logo">CHAKYR</div>
+<p>DIGITAL INVITATIONS</p>
+<p>Ар бир өзгөчө күн — өзгөчө эскерүү.</p>
+<p>© 2026 CHAKYR.STUDIO</p>
 </footer>
 
+<a class="whatsapp" href="https://wa.me/996507505947" target="_blank">☏</a>
+
 <script>
-const categories = document.querySelectorAll(".cat");
-const designs = document.querySelectorAll(".design");
-const search = document.getElementById("search");
-const count = document.getElementById("count");
+const WHATSAPP_NUMBER = "996507505947";
 
-let selected = "all";
+document.getElementById("orderForm").addEventListener("submit",function(e){
+e.preventDefault();
 
-function filterDesigns(){
-let visible = 0;
-designs.forEach(card=>{
-const category = card.dataset.cat;
-const name = card.dataset.name.toLowerCase();
-const text = search.value.toLowerCase();
-const show = (selected==="all" || category===selected)
-&& name.includes(text);
-card.style.display = show ? "block" : "none";
-if(show) visible++;
-});
-count.textContent = visible + " ДИЗАЙН";
-}
+const customer=document.getElementById("customer").value;
+const event=document.getElementById("event").value;
+const service=document.getElementById("service").value;
+const names=document.getElementById("names").value;
+const date=document.getElementById("date").value;
+const time=document.getElementById("time").value;
+const place=document.getElementById("place").value;
+const extra=document.getElementById("extra").value;
 
-categories.forEach(button=>{
-button.addEventListener("click",()=>{
-categories.forEach(b=>b.classList.remove("active"));
-button.classList.add("active");
-selected = button.dataset.cat;
-filterDesigns();
-});
-});
-
-search.addEventListener("input",filterDesigns);
-
-document.querySelectorAll(".order").forEach(button=>{
-button.addEventListener("click",event=>{
-event.preventDefault();
-const design = button.dataset.design;
 const message =
-"Саламатсызбы! CHAKYR.STUDIO аркылуу заказ бергим келет.%0A"+
-"Тандаган дизайн: "+encodeURIComponent(design)+
-"%0AАты-жөнүм: "+
-"%0AМайрамдын түрү: "+
-"%0AКүнү: "+
-"%0AДареги: "+
-"%0AКошумча маалымат: ";
-window.open("https://wa.me/996507505947?text="+message,"_blank");
-});
+"Саламатсызбы! CHAKYR.STUDIO аркылуу заказ бергим келет.%0A%0A"+
+"Кардар: "+encodeURIComponent(customer)+"%0A"+
+"Майрам: "+encodeURIComponent(event)+"%0A"+
+"Кызмат: "+encodeURIComponent(service)+"%0A"+
+"Аты-жөнү: "+encodeURIComponent(names)+"%0A"+
+"Дата: "+encodeURIComponent(date)+"%0A"+
+"Убакыт: "+encodeURIComponent(time)+"%0A"+
+"Дарек: "+encodeURIComponent(place)+"%0A"+
+"Кошумча: "+encodeURIComponent(extra);
+
+window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+message,"_blank");
 });
 </script>
-
 </body>
 </html>
