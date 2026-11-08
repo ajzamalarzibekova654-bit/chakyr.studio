@@ -4,162 +4,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#eee8dc">
 <title>CHAKYR.STUDIO — Санарип чакыруулар</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:#f5f1e9;color:#302820;font-family:Montserrat,sans-serif}
-header{padding:25px 20px;text-align:center;border-bottom:1px solid #ded5c6}
-.logo{font-family:'Cormorant Garamond',serif;font-size:45px;letter-spacing:8px;color:#a58a58;font-weight:700}
-.sublogo{font-size:10px;letter-spacing:7px;color:#827766;margin-top:5px}
-.hero{min-height:650px;padding:95px 22px 65px;text-align:center;background:radial-gradient(circle at 10% 30%,#e9dfce,transparent 35%),radial-gradient(circle at 90% 80%,#e6dccb,transparent 35%)}
-.tag{font-size:11px;letter-spacing:5px;color:#a58a58;margin-bottom:35px}
-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(45px,12vw,75px);line-height:1.05;font-weight:500;max-width:650px;margin:auto}
-.hero p{font-size:14px;line-height:2;color:#82796e;margin:30px auto;max-width:440px}
-.btn{display:inline-block;padding:19px 30px;border-radius:50px;text-decoration:none;font-size:13px;font-weight:600;margin:7px;background:#29231e;color:white;border:1px solid #29231e}
-.btn.light{background:#fff;color:#29231e;border-color:#ddd4c7}
-.section{padding:75px 20px;text-align:center}
-.section h2{font-family:'Cormorant Garamond',serif;font-size:43px;font-weight:500;margin-bottom:15px}
-.desc{color:#897e71;font-size:13px;line-height:2;margin:0 auto 35px;max-width:450px}
-.divider{color:#b59b68;font-size:25px;margin:25px}
-.samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:850px;margin:auto}
-.sample{background:#fff;padding:35px 18px;border:1px solid #e4dacb;border-radius:4px;box-shadow:0 8px 25px #00000008}
-.sample .symbol{font-size:35px;color:#b49a65;margin-bottom:15px}
-.sample h3{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500}
-.sample p{font-size:12px;color:#958a7c;line-height:1.8;margin-top:12px}
-.steps{max-width:650px;margin:auto;text-align:left}
-.step{padding:20px;border-bottom:1px solid #ded5c6;display:flex;gap:20px;align-items:center}
-.num{font-family:'Cormorant Garamond',serif;font-size:35px;color:#b39a69}
-.step p{font-size:13px;line-height:1.8;color:#82796e}
-.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;max-width:650px;margin:auto}
-.price{padding:35px 20px;background:#fff;border:1px solid #ded4c4;border-radius:8px}
-.price.featured{background:#827260;color:white}
-.price h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500}
-.amount{font-size:29px;font-weight:600;margin:20px 0}
-.price p{font-size:12px;line-height:2;color:inherit;opacity:.8}
-.price .btn{margin-top:20px}
-form{max-width:520px;margin:auto;text-align:left;background:white;padding:28px;border-radius:12px}
-label{font-size:12px;display:block;margin:17px 0 8px;color:#766b5e}
-input,select,textarea{width:100%;padding:15px;border:1px solid #ded5c7;border-radius:7px;background:#fcfaf6;font-family:Montserrat;font-size:13px;outline:none}
-textarea{min-height:80px}
-form button{width:100%;cursor:pointer;margin-top:25px}
-footer{padding:40px 20px;text-align:center;background:#302820;color:#e9dfce}
-footer .logo{font-size:32px}
-footer p{font-size:11px;margin-top:15px;line-height:2;color:#c6b9a5}
-.whatsapp{position:fixed;right:20px;bottom:22px;background:#25c76a;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:27px;box-shadow:0 5px 20px #0002;z-index:10}
+*{box-sizing:border-box}
+body{margin:0;background:#faf8f4;color:#302b27;font-family:Arial,sans-serif}
+header{text-align:center;padding:35px 15px;background:#f1e9df}
+.logo{font-family:Georgia,serif;font-size:34px;letter-spacing:5px;color:#98764e}
+header p{color:#786d61;letter-spacing:2px;font-size:12px}
+h1,h2{font-family:Georgia,serif;font-weight:normal}
+h1{font-size:30px}
+h2{font-size:25px}
+section{padding:28px 17px;max-width:850px;margin:auto}
+.intro{text-align:center;padding-top:38px}
+.intro p{line-height:1.7;color:#746b62}
+.btn{display:inline-block;background:#98764e;color:white;border:0;padding:14px 22px;border-radius:5px;text-decoration:none;font-size:15px;cursor:pointer}
+.btn.light{background:#e9dfd2;color:#59452f}
+.templates{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.template{background:white;border:1px solid #e8dfd4;border-radius:9px;overflow:hidden;text-align:center;cursor:pointer;padding-bottom:14px}
+.template.selected{border:2px solid #98764e}
+.cover{height:145px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;font-family:Georgia,serif;font-size:22px;line-height:1.5}
+.cover.one{background:#f2e8dd;color:#846344}
+.cover.two{background:#e9e8df;color:#56614f}
+.cover.three{background:#f4e2e2;color:#9b6666}
+.cover.four{background:#e8e0ef;color:#77618c}
+.template small{display:block;margin-top:10px;color:#756b60}
+label{display:block;margin:15px 0 6px;font-size:14px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #ded5ca;border-radius:6px;background:white;font-size:15px;color:#302b27}
+textarea{min-height:75px}
+.formbox,.previewbox,.pricebox{background:white;padding:20px;border-radius:10px;border:1px solid #eee5db;margin-top:15px}
+.choice{display:flex;gap:10px;flex-wrap:wrap}
+.choice label{flex:1;min-width:130px;background:#f5f0e9;padding:13px;border-radius:6px;margin:5px 0}
+.price{font-size:23px;color:#98764e;font-weight:bold}
+.preview{background:#f4ece2;text-align:center;padding:30px 18px;border:1px solid #dfd0bc;min-height:260px}
+.preview h2{color:#876644}
+.preview p{line-height:1.7;white-space:pre-line}
+.note{font-size:13px;color:#81776d;line-height:1.6}
+footer{text-align:center;background:#eee6dc;padding:30px 15px;margin-top:30px}
+footer .logo{font-size:25px}
+.whatsapp{position:fixed;right:17px;bottom:18px;background:#248d57;color:white;text-decoration:none;border-radius:50px;padding:15px 19px;box-shadow:0 3px 12px #0002}
+hr{border:0;border-top:1px solid #eee5db;margin:25px 0}
+@media(min-width:650px){.templates{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
 
 <header>
 <div class="logo">CHAKYR</div>
-<div class="sublogo">DIGITAL INVITATIONS</div>
+<p>D I G I T A L &nbsp; I N V I T A T I O N S</p>
 </header>
 
-<section class="hero">
-<div class="tag">ӨЗГӨЧӨ КҮН · ӨЗГӨЧӨ АДАМДАР</div>
-<h1>Ар бир майрамга өзгөчө чакыруу</h1>
-<p>Жакындарыңызды корей стилиндеги кооз, назик жана заманбап санарип чакыруу менен кубантыңыз.</p>
-<a href="#design" class="btn">Дизайн тандоо</a>
-<a href="#order" class="btn light">Заказ берүү</a>
-<div class="divider">✧ ❀ ✧</div>
+<section class="intro">
+<h1>Ар бир өзгөчө күн — өзгөчө эскерүү.</h1>
+<p>Жашооңуздагы эң маанилүү күндөрдү кооз санарип чакыруулар менен бөлүшүңүз.</p>
+<a href="#templates" class="btn">Чакыруу тандоо</a>
 </section>
 
-<section class="section" id="design">
-<h2>Биздин чакыруулар</h2>
-<p class="desc">Ар бир өзгөчө күнүңүзгө жарашкан назик дизайндар</p>
-<div class="samples">
-<div class="sample">
-<div class="symbol">♡</div>
-<h3>Elegant Wedding</h3>
-<p>Ак жана алтын түстөгү романтикалык үйлөнүү тоюна чакыруу.</p>
+<section id="templates">
+<h2>Чакыруу үлгүлөрү</h2>
+<p class="note">Өзүңүзгө жаккан дизайнды тандаңыз.</p>
+<div class="templates">
+<div class="template selected" onclick="chooseTemplate(0,this)">
+<div class="cover one">Сүйүү<br>жана бакыт</div>
+<strong>Elegant</strong><small>Назик классика</small>
 </div>
-<div class="sample">
-<div class="symbol">✿</div>
-<h3>Pink Blossom</h3>
-<p>Кыз узатуу жана өзгөчө майрамдар үчүн назик дизайн.</p>
+<div class="template" onclick="chooseTemplate(1,this)">
+<div class="cover two">Ак тилек<br>ак жол</div>
+<strong>Nature</strong><small>Табигый стиль</small>
 </div>
-<div class="sample">
-<div class="symbol">✧</div>
-<h3>Royal Gold</h3>
-<p>Люкс стилиндеги өзгөчө жана жарашыктуу чакыруу.</p>
+<div class="template" onclick="chooseTemplate(2,this)">
+<div class="cover three">Куттуу<br>той болсун</div>
+<strong>Romantic</strong><small>Романтикалык стиль</small>
 </div>
-</div>
-</section>
-
-<section class="section">
-<h2>Кантип иштейбиз?</h2>
-<p class="desc">Заказ берүү абдан оңой</p>
-<div class="steps">
-<div class="step"><span class="num">01</span><p><b>Дизайн тандаңыз</b><br>Өзүңүзгө жаккан чакыруу үлгүсүн тандаңыз.</p></div>
-<div class="step"><span class="num">02</span><p><b>Маалымат жөнөтүңүз</b><br>Аты-жөнү, дата, убакыт жана даректи жазыңыз.</p></div>
-<div class="step"><span class="num">03</span><p><b>Төлөм жүргүзүңүз</b><br>Төлөм ырасталгандан кийин чакыруу даярдалат.</p></div>
-<div class="step"><span class="num">04</span><p><b>Даяр шилтемени алыңыз</b><br>Конокторуңузга WhatsApp аркылуу жөнөтүңүз.</p></div>
-</div>
-</section>
-
-<section class="section" id="prices">
-<h2>Биздин баалар</h2>
-<p class="desc">Сизге ылайыктуу кызматты тандаңыз</p>
-<div class="prices">
-<div class="price">
-<h3>Стандарт</h3>
-<div class="amount">1 490 сом</div>
-<p>Даяр дизайн<br>Маалыматтарды жайгаштыруу<br>Интерактивдүү чакыруу<br>Конокторго жөнөтүү үчүн шилтеме</p>
-<a href="#order" class="btn">Заказ берүү</a>
-</div>
-<div class="price featured">
-<h3>Жеке дизайн</h3>
-<div class="amount">2 490 сом</div>
-<p>Сиз үчүн өзгөчө дизайн<br>Жеке түс жана стил<br>Сүрөттөрдү жайгаштыруу<br>Анимация жана интерактив<br>Жеке каалоого ылайыкташтыруу</p>
-<a href="#order" class="btn light">Заказ берүү</a>
+<div class="template" onclick="chooseTemplate(3,this)">
+<div class="cover four">Өзгөчө күн<br>өзгөчө учур</div>
+<strong>Royal</strong><small>Назик люкс стиль</small>
 </div>
 </div>
 </section>
 
-<section class="section" id="order">
-<h2>Заказ берүү</h2>
-<p class="desc">Маалыматтарды толтуруңуз. Заказыңыз WhatsApp аркылуу жөнөтүлөт.</p>
-<form id="orderForm">
-<label>Аты-жөнүңүз</label>
-<input id="customer" placeholder="Атыңызды жазыңыз" required>
-
-<label>Майрамдын түрү</label>
-<select id="event">
+<section id="create">
+<h2>Чакыруу жасоо</h2>
+<div class="formbox">
+<label>Кандай иш-чара?</label>
+<select id="event" onchange="updatePreview()">
 <option>Үйлөнүү үлпөтү</option>
 <option>Кыз узатуу</option>
-<option>Тушоо той</option>
 <option>Бешик той</option>
-<option>Сүннөт той</option>
+<option>Тушоо кесүү</option>
 <option>Туулган күн</option>
 <option>Юбилей</option>
+<option>Башка иш-чара</option>
 </select>
 
-<label>Кызмат түрү</label>
-<select id="service">
-<option>Стандарт — 1490 сом</option>
-<option>Жеке дизайн — 2490 сом</option>
-</select>
+<label>Кимдердин тою?</label>
+<input id="names" placeholder="Мисалы: Айбек жана Айдана" oninput="updatePreview()">
 
-<label>Майрам ээлеринин аты-жөнү</label>
-<input id="names" placeholder="Мисалы: Азамат жана Айдана" required>
-
-<label>Майрамдын датасы</label>
-<input id="date" type="date" required>
+<label>Күнү</label>
+<input id="date" type="date" onchange="updatePreview()">
 
 <label>Башталыш убактысы</label>
-<input id="time" type="time">
+<input id="time" type="time" onchange="updatePreview()">
 
-<label>Ресторан же дарек</label>
-<input id="place" placeholder="Ресторандын аталышы жана дареги">
+<label>Дареги</label>
+<input id="place" placeholder="Ресторандын же үйдүн дареги" oninput="updatePreview()">
 
-<label>Кошумча маалымат</label>
-<textarea id="extra" placeholder="Каалоолоруңузду жазыңыз"></textarea>
+<label>Кошумча каалоо-тилек</label>
+<textarea id="message" placeholder="Сиздерди кубанычтуу күнүбүзгө чакырабыз..." oninput="updatePreview()"></textarea>
 
-<button class="btn" type="submit">WhatsApp аркылуу заказ берүү</button>
-</form>
+<label>Карта же жайгашкан жердин шилтемеси (кааласаңыз)</label>
+<input id="maplink" placeholder="Google Maps шилтемеси">
+
+<hr>
+<h2>Кызмат түрү</h2>
+<div class="choice">
+<label><input type="radio" name="service" value="Өзүм жасайм" checked onchange="updatePrice()"> Өзүм жасайм</label>
+<label><input type="radio" name="service" value="CHAKYR.STUDIO даярдап берсин" onchange="updatePrice()"> Сиздер даярдап бериңиздер</label>
+</div>
+<div class="pricebox">
+<p>Эки учурда тең баа бирдей:</p>
+<div class="price">1 490 сом</div>
+<p class="note">Стандарт чакыруу</p>
+<div class="price">2 490 сом</div>
+<p class="note">Жеке дизайн</p>
+<select id="package" onchange="updatePrice()">
+<option value="1490">Стандарт — 1 490 сом</option>
+<option value="2490">Жеке дизайн — 2 490 сом</option>
+</select>
+<p>Тандалган баа: <strong id="total">1 490 сом</strong></p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Чакырууңуздун көрүнүшү</h2>
+<div class="previewbox">
+<div class="preview" id="preview">
+<p>СИЗДЕРДИ ЧАКЫРАБЫЗ</p>
+<h2 id="pEvent">Үйлөнүү үлпөтү</h2>
+<h2 id="pNames">Айбек жана Айдана</h2>
+<p id="pDate">Күнү көрсөтүлө элек</p>
+<p id="pTime">Убактысы көрсөтүлө элек</p>
+<p id="pPlace">Дареги көрсөтүлө элек</p>
+<p id="pMessage">Сиздерди кубанычтуу күнүбүзгө чакырабыз!</p>
+</div>
+</div>
+<p class="note">Маалыматтарды өзгөрткөн сайын чакыруунун алдын ала көрүнүшү жаңыланат.</p>
+<button class="btn" onclick="downloadInvitation()">Чакыруу файлын жүктөө</button>
+<button class="btn light" onclick="shareInvitation()">Шилтемени түзүү жана бөлүшүү</button>
+<p class="note" id="shareStatus"></p>
+</section>
+
+<section id="order">
+<h2>Заказ берүү жана төлөм</h2>
+<div class="formbox">
+<p>Төлөм MBank же башка банк аркылуу кол менен жүргүзүлөт. Реквизиттерди WhatsApp аркылуу сурасаңыз болот. Төлөмдү ырастоо кол менен жүргүзүлөт.</p>
+<button class="btn" onclick="sendOrder()">WhatsApp аркылуу заказ берүү</button>
+<p class="note">Төлөм чегин WhatsApp аркылуу жөнөтүп, ырастоону күтүңүз.</p>
+</div>
 </section>
 
 <footer>
@@ -169,36 +170,131 @@ footer p{font-size:11px;margin-top:15px;line-height:2;color:#c6b9a5}
 <p>© 2026 CHAKYR.STUDIO</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/996507505947" target="_blank">☏</a>
+<a class="whatsapp" href="https://wa.me/996507505947" target="_blank">WhatsApp</a>
 
 <script>
-const WHATSAPP_NUMBER = "996507505947";
+const WHATSAPP_NUMBER="996507505947";
+let selectedTemplate=0;
 
-document.getElementById("orderForm").addEventListener("submit",function(e){
-e.preventDefault();
+function chooseTemplate(n,el){
+ selectedTemplate=n;
+ document.querySelectorAll(".template").forEach(x=>x.classList.remove("selected"));
+ el.classList.add("selected");
+ document.getElementById("preview").style.background=
+ ["#f4ece2","#e9e8df","#f4e2e2","#e8e0ef"][n];
+ updatePreview();
+}
 
-const customer=document.getElementById("customer").value;
-const event=document.getElementById("event").value;
-const service=document.getElementById("service").value;
-const names=document.getElementById("names").value;
-const date=document.getElementById("date").value;
-const time=document.getElementById("time").value;
-const place=document.getElementById("place").value;
-const extra=document.getElementById("extra").value;
+function getService(){
+ return document.querySelector('input[name="service"]:checked').value;
+}
 
-const message =
-"Саламатсызбы! CHAKYR.STUDIO аркылуу заказ бергим келет.%0A%0A"+
-"Кардар: "+encodeURIComponent(customer)+"%0A"+
-"Майрам: "+encodeURIComponent(event)+"%0A"+
-"Кызмат: "+encodeURIComponent(service)+"%0A"+
-"Аты-жөнү: "+encodeURIComponent(names)+"%0A"+
-"Дата: "+encodeURIComponent(date)+"%0A"+
-"Убакыт: "+encodeURIComponent(time)+"%0A"+
-"Дарек: "+encodeURIComponent(place)+"%0A"+
-"Кошумча: "+encodeURIComponent(extra);
+function getData(){
+ return {
+ event:document.getElementById("event").value,
+ names:document.getElementById("names").value,
+ date:document.getElementById("date").value,
+ time:document.getElementById("time").value,
+ place:document.getElementById("place").value,
+ message:document.getElementById("message").value,
+ maplink:document.getElementById("maplink").value,
+ service:getService(),
+ price:document.getElementById("package").value,
+ template:selectedTemplate
+ };
+}
 
-window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+message,"_blank");
-});
+function updatePreview(){
+ const d=getData();
+ document.getElementById("pEvent").textContent=d.event;
+ document.getElementById("pNames").textContent=d.names||"Аты-жөндөрү";
+ document.getElementById("pDate").textContent=d.date||"Күнү көрсөтүлө элек";
+ document.getElementById("pTime").textContent=d.time||"Убактысы көрсөтүлө элек";
+ document.getElementById("pPlace").textContent=d.place||"Дареги көрсөтүлө элек";
+ document.getElementById("pMessage").textContent=d.message||"Сиздерди кубанычтуу күнүбүзгө чакырабыз!";
+ updatePrice();
+}
+
+function updatePrice(){
+ document.getElementById("total").textContent=
+ Number(document.getElementById("package").value).toLocaleString("en-US")+" сом";
+}
+
+function invitationHTML(d){
+ return `<!DOCTYPE html><html lang="ky"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${escapeHTML(d.event)}</title>
+<style>
+body{margin:0;background:#f4ece2;font-family:Georgia,serif;color:#72563c;text-align:center}
+main{max-width:520px;margin:30px auto;padding:35px 20px;border:1px solid #c8ad8c;background:#fffaf3;min-height:70vh;display:flex;flex-direction:column;justify-content:center}
+h1{font-size:30px;font-weight:normal}p{line-height:1.8;white-space:pre-line}
+</style>
+<main><p>СИЗДЕРДИ ЧАКЫРАБЫЗ</p><h1>${escapeHTML(d.event)}</h1>
+<h1>${escapeHTML(d.names||"")}</h1>
+<p>${escapeHTML(d.date||"")}</p><p>${escapeHTML(d.time||"")}</p>
+<p>${escapeHTML(d.place||"")}</p><p>${escapeHTML(d.message||"")}</p>
+${d.maplink?'<p><a href="'+escapeHTML(d.maplink)+'">Картадан көрүү</a></p>':""}
+</main></html>`;
+}
+
+function escapeHTML(s){
+ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function downloadInvitation(){
+ const d=getData();
+ const blob=new Blob([invitationHTML(d)],{type:"text/html;charset=utf-8"});
+ const url=URL.createObjectURL(blob);
+ const a=document.createElement("a");
+ a.href=url;a.download="chakyr-invitation.html";a.click();
+ URL.revokeObjectURL(url);
+}
+
+function shareInvitation(){
+ const d=getData();
+ const encoded=btoa(unescape(encodeURIComponent(JSON.stringify(d))));
+ const url=location.origin+location.pathname+"#invite="+encoded;
+ document.getElementById("shareStatus").textContent=url;
+ if(navigator.share){
+  navigator.share({title:"Менин чакыруум",url:url}).catch(()=>{});
+ }else if(navigator.clipboard){
+  navigator.clipboard.writeText(url).then(()=>alert("Шилтеме көчүрүлдү!"));
+ }else{
+  prompt("Шилтемени көчүрүңүз:",url);
+ }
+}
+
+function sendOrder(){
+ const d=getData();
+ const msg=`Саламатсызбы! CHAKYR.STUDIO аркылуу заказ бергим келет.%0AИш-чара: ${encodeURIComponent(d.event)}%0Аты-жөнү: ${encodeURIComponent(d.names)}%0AКүнү: ${encodeURIComponent(d.date)}%0AУбактысы: ${encodeURIComponent(d.time)}%0AДареги: ${encodeURIComponent(d.place)}%0AКызмат: ${encodeURIComponent(d.service)}%0AТандалган пакет: ${d.price} сом%0AҮлгү: ${d.template+1}`;
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+msg,"_blank");
+}
+
+function loadSharedInvitation(){
+ if(!location.hash.startsWith("#invite="))return;
+ try{
+  const d=JSON.parse(decodeURIComponent(escape(atob(location.hash.slice(8)))));
+  document.getElementById("create").style.display="none";
+  document.getElementById("templates").style.display="none";
+  document.getElementById("order").style.display="none";
+  document.querySelector(".intro").style.display="none";
+  document.querySelector("section:last-of-type").style.display="none";
+  document.getElementById("preview").innerHTML=`
+  <p>СИЗДЕРДИ ЧАКЫРАБЫЗ</p>
+  <h2>${escapeHTML(d.event)}</h2>
+  <h2>${escapeHTML(d.names)}</h2>
+  <p>${escapeHTML(d.date)}</p>
+  <p>${escapeHTML(d.time)}</p>
+  <p>${escapeHTML(d.place)}</p>
+  <p>${escapeHTML(d.message)}</p>
+  ${d.maplink?'<a href="'+escapeHTML(d.maplink)+'">Картадан көрүү</a>':""}`;
+  document.querySelector("section:nth-of-type(2)").style.display="none";
+ }catch(e){
+  document.getElementById("shareStatus").textContent="Чакыруу шилтемеси туура эмес.";
+ }
+}
+updatePreview();
+loadSharedInvitation();
 </script>
 </body>
 </html>
